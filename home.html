@@ -1,0 +1,35 @@
+{% extends 'base_layout.html' %}
+
+{% block body %}
+
+<div class="container">
+<div class="weather">
+    <h1>City: <b>{{weather.city}}, {{weather.country}}</b></h1>
+    <h2><b>{{weather.temperature}}&#8451</b></h2>
+    <h3>{{weather.description}}</h3>
+    <p>Pressure : {{weather.pressure}}</p>
+    <p>Humidity : {{weather.humidity}}</p>
+    <p>Wind : {{weather.wind}}</p>
+    <p><img src="http://openweathermap.org/img/w/{{weather.icon }}.png" alt="" width="60px" height="80px" ></p>
+    <form class="form">
+        <input type="text" name="city" placeholder="weather search">
+        <input type="submit" value="Submit">
+    </form>
+</div>  
+
+
+<div class="covid-19" >
+    <h1>Daily News About Covid-19</h1>
+    {% for new,des,i,link in context %}
+    <div class="news" align="center">
+        <img src="{{i}}" alt="" width="50%">
+        <h2>{{new}}</h2>
+        <h3>{{des}}</h3>
+        <a href="{{link}}" target="_blank">Read More</a>
+    </div>
+    {% endfor %}
+    </div>
+
+
+{% endblock %}
+

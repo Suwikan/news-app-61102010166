@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,500;0,700;1,400&display=swap');
+*{
+    margin: 80;
+    padding:100;
+    box-sizing: border-box;
+    font-family: 'Manuale', serif;
+    scroll-behavior: smooth;
+}
+.weather {
+    background: url(https://images.unsplash.com/photo-1580119587314-729c18653f07?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHdlYXRoZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.weather h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    color: rgb(56, 55, 55);
+    text-shadow: 5px 4px rgb(139, 137, 137), 4px 5px #ccc;
+}
+.weather h2{
+    font-size: 40px;
+    padding-bottom: 3px;
+    color: rgb(36, 32, 32);
+}
+.weather h3{
+    font-size: 35px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    color: rgb(207, 192, 192);
+}
+
+.form{
+    width: 700px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 60%;
+    background-color: #a9aca9;
+    color: rgb(59, 57, 57);
+    padding: 10px 18px;
+    margin: 8px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.weather p{
+    font-size: 24px;
+    margin: 2px;
+    color: white;
+}
+@media screen and (max-width:768px){
+    .form{
+        flex-direction: column;
+    }
+    input[type=text]{
+        width: 50%;
+        padding: 8px 16px;
+        margin: 6px 0;
+        display: inline;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#DCDCDC;
+    color:black;
+    margin: 0 auto;
+}
+.navbar-logo {
+    font-size: 1.5rem;
+    margin: 0.5rem 4rem;
+}
+.navbar-links ul {
+    margin: 0.5rem 4rem;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    bottom: transparent;
+}
+.navbar-links li a:hover {
+    background: #555;
+    color: rgb(189, 185, 192);
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+.toggle-button {
+    display: flex;
+}
+.navbar-links {
+    display: none;
+}
+.navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+}
+.navbar-links li {
+    text-align: center;
+}
+.navbar-links li a {
+    padding: 0.5rem 1rem;
+}
+.navbar-links.active {
+    display: flex;
+    }
+}
+
+.content-covid19{
+    width: 1000px;
+    margin: 1rem auto;
+    background: rgb(97, 91, 99);
+    border-radius: 7px;
+    padding: 1.2rem;
+}
+.news{
+    font-size: 16px;
+    color: rgb(247, 247, 247);
+    width: 1000px;
+    margin: 1rem auto;
+    background:rgb(91, 90, 92);
+}
+
+search-news{
+    width: 100%;
+
+}
+.topnews{
+    width: 100%;
+    height: 80px;
+    background: rgb(32, 31, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-left a{
+    padding-left: 3rem;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+input[type=text].src-news{
+    padding: 12px 18px;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+input[type=submit].search{
+    margin-right: -15.5rem;
+    padding: 12px 10px;
+    border-radius: 5px;
+    width: 4%;
+    position: absolute;
+}
+.content-news{
+    width: 1000px;
+    margin: 1rem auto;
+    background: #201f1f ;
+    border-radius: 7px;
+    padding: 1.2rem;
+}
+.content-news h2{
+    font-size: 26px;
+    font-weight: bold;
+    color: honeydew;
+    border-bottom: 3px solid grey;
+}
+.content-news h3{
+    height: 130px;
+    overflow: hidden;
+    margin-top: .4rem;
+    color: ivory;
+    font-size: 19px;
+}
+.content-news a{
+    padding: .5rem .3rem;
+    background: #fff;
+    color: #000;
+    margin-top: 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.content-news a:hover{
+    background: rgb(14, 29, 230);
+    color: #fff;
+}
+@media screen and (max-width:860px){
+    input[type=text].src-news{
+        padding: 8px 10px;
+        border-radius: 4px;
+    }
+    input[type=submit].search{
+        margin-right: -15rem;
+        padding: 8px 6px;
+        border-radius: 4px;
+        width: 8%;
+    }
+    .content-news{
+        width: 500px;
+    }
+}
+.profile {
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1494185728463-86366f396213?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fG1pbmltYWx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(15, 15, 15);
+    padding: 1.5rem 0;
+}
+.profile h2 {
+    font-size: 50px;
+    color: rgb(71, 68, 68);
+    margin: 0.5rem 0;
+}
+@media screen and (max-width:800px){
+    .profile h1{
+        font-size: 52px;
+    }
+    .profile h2{
+        font-size: 36px;
+    }
+}
+.footer{
+    background: #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright p{
+    margin: .5rem 3rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(87, 87, 82);
+}
+.social{
+    margin-right: 2.5rem;
+}
+.social a img{
+    margin: .1rem 1rem;
+}
+
+
